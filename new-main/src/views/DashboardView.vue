@@ -64,44 +64,9 @@
         Bienvenido a CIVIS
       </h2>
 
-      <p>
-        Sistema de gestión de usuarios
-      </p>
-
       <!-- CARDS -->
       <div class="cards">
 
-        <!-- USUARIOS -->
-        <div
-          class="card"
-          v-if="userRole === 'admin'"
-        >
-
-          <h3>
-            Usuarios
-          </h3>
-
-          <p>
-            Gestiona usuarios del sistema
-          </p>
-
-        </div>
-
-        <!-- ROLES -->
-        <div
-          class="card"
-          v-if="userRole === 'admin'"
-        >
-
-          <h3>
-            Roles
-          </h3>
-
-          <p>
-            Administra permisos y accesos
-          </p>
-
-        </div>
 
         <!-- PERFIL -->
         <div class="card">
@@ -176,15 +141,15 @@ localStorage.setItem(
 
 .navbar {
 
-  height: 70px;
+  height: 80px;
 
-  background: #6a0dad;
+  background: #8531c1;
 
   display: flex;
 
   align-items: center;
 
-  padding: 0 20px;
+  padding: 0 30px;
 
   color: white;
 
@@ -195,7 +160,7 @@ localStorage.setItem(
 
 .logo {
 
-  font-size: 22px;
+  font-size: 45px;
 
 }
 
@@ -221,7 +186,7 @@ localStorage.setItem(
 
   position: fixed;
 
-  top: 70px;
+  top: 80px;
 
   left: -260px;
 
@@ -307,7 +272,7 @@ localStorage.setItem(
   display: grid;
 
   grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
+    repeat(auto-fit, minmax(25px, 25fr));
 
   gap: 20px;
 
@@ -319,20 +284,22 @@ localStorage.setItem(
 
   background: white;
 
-  padding: 20px;
+  padding: 10px;
 
   border-radius: 12px;
 
   box-shadow:
-    0 2px 10px rgba(0,0,0,0.1);
+    0 2px 10px rgba(59, 19, 19, 0.1);
 
   transition: 0.3s;
+  max-width: 250px;
+  width: 100%;
 
 }
 
 .card:hover {
 
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 
 }
 
@@ -340,13 +307,13 @@ localStorage.setItem(
 
   margin-bottom: 10px;
 
-  color: #6a0dad;
+  color: #6f0fb3;
 
 }
 
 .card p {
 
-  color: #666;
+  color: #776a6a;
 
 }
 
